@@ -1,8 +1,8 @@
 class LocalGitops < Formula
   desc "Local GitOps environment with Kind, ArgoCD, and Gitea"
   homepage "https://github.com/joaopires/useful-stuff"
-  url "https://github.com/joaopires/useful-stuff/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "3c5a28aa96ecdc195414ee199c449fd2001c17571765f1e6936c0a0df0d62a7b"
+  url "https://github.com/joaopires/useful-stuff/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "85a720b5a8a1573fb01c423b3a4be59d3885aa6c6eca3b45871b881d36df7646"
   license "MIT"
 
   depends_on "kind"
