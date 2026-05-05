@@ -5,20 +5,20 @@
 class Drydock < Formula
   desc "DryDock is a local GitOps sandbox environment"
   homepage "https://github.com/joaopires/drydock"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.4.0/drydock_Darwin_x86_64.tar.gz"
-      sha256 "eaed1bedb498a72220a80c3c7c2ef89151389570b13896578be8bd5464a43b41"
+      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.5.0/drydock_Darwin_x86_64.tar.gz"
+      sha256 "2a76218c92f032653fcabaa93f6467353b69f5e0241df9b9306557944ed048c6"
 
       define_method(:install) do
         bin.install "drydock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.4.0/drydock_Darwin_arm64.tar.gz"
-      sha256 "9a642c38e519afd197a45f72625688f96fead4ef40ce7fd907ccfc993315403a"
+      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.5.0/drydock_Darwin_arm64.tar.gz"
+      sha256 "33f95115fd18bc95c27737e2627d021b42bb2384dcbd94d8f212dece0a7423ee"
 
       define_method(:install) do
         bin.install "drydock"
@@ -28,15 +28,15 @@ class Drydock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.4.0/drydock_Linux_x86_64.tar.gz"
-      sha256 "4d7a106d5e9a7f0e5ce884cab4e6ad2192523b1abe0564cd869ee24f564ea4aa"
+      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.5.0/drydock_Linux_x86_64.tar.gz"
+      sha256 "a2ed00e363205f53defa7ee612e314693d3f9b81f57bd3c3d272acd39e956c02"
       define_method(:install) do
         bin.install "drydock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.4.0/drydock_Linux_arm64.tar.gz"
-      sha256 "ae2cf8ba017940287573973f8e3fbaa8d953807911aa8be12fa13e053f4222ce"
+      url "https://github.com/joaopires/homebrew-tap/releases/download/v0.5.0/drydock_Linux_arm64.tar.gz"
+      sha256 "a7bf17822fa479f5c7ca2cf3a28a4e61466a6080e23e6bad5730760181bc6db6"
       define_method(:install) do
         bin.install "drydock"
       end
